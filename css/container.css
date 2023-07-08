@@ -7,6 +7,7 @@
     background-image: url("https://i.postimg.cc/7YXxrX9t/backgroundneon.jpg");
     background-size: cover;
     background-attachment: fixed;
+    object-fit: cover;
     font-family: "Roboto Condensed", sans-serif;
 }
 
@@ -30,10 +31,16 @@
     align-items: center;
     flex-wrap: wrap;
     line-height: 3;
+    flex-grow: 1;
 }
 
-.table__Caption {
+.table__caption {
+    text-align: left;
     margin: auto 20px;
+}
+
+.table__overflow {
+    overflow-x: auto;
 }
 
 .section__miniImage {

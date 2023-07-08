@@ -1,20 +1,20 @@
 /*2. Style*/
 html {
-   box-sizing: border-box; /*alter borderbox dodany by padding i border byly brane pod uwage przy skalowaniu itp*/
+   box-sizing: border-box;
 }
 
 *, ::after, ::before {
-    box-sizing: inherit; /*bacground: transparent*/
+    box-sizing: inherit; 
 }
 
 .section__header {
-    background-color: #ffe100cd; /*ozdobniki do naglowkoww*/
+    background-color: #ffe100cd; 
     color: #7c0707;
     border-radius: 20px / 90px;
     text-shadow: 0px 2px 25px #176d2b;
 }
 
-.container__bodyStyle { /*tło wypełniające główną treść*/
+.container__bodyStyle {
     content: "";
     background-color: #21224a85; /*ciekawy trick zamiast opacity (dać rgba i po, pisac )*/
     color: #FFE300;
@@ -23,13 +23,13 @@ html {
     position: relative;
 }
 
-.content__importantItem { /*ozdobne obramowanie*/
+.content__importantItem { 
 border: 5px solid #0009FF;
 outline: solid #FF00B1;
 text-align: center;
 }
 
-.comment__boxModel { /*ramka do pisania komentarza*/
+.comment__boxModel { 
     border: 2px solid #176e2c;
     color: #ffffff;
     background-color: rgba(33, 34, 74, 0.795);
@@ -38,6 +38,7 @@ text-align: center;
     min-width: 90%;
     max-height: 100px;
     resize:vertical;
+    resize: none;
 }
 
 .content__importantPhrase {
@@ -50,10 +51,6 @@ text-align: center;
     width: 90%; 
 }
 
-.table__overflow {
-    overflow-x: auto;
-}
-
 .table__cell {
     border: 5px solid #7c0707;
     background-color: #c5ae07cd;
@@ -64,17 +61,12 @@ text-align: center;
 }
 
 .table__cell:hover {
-    background-color: #a28f00cd; /*ozdobniki do naglowkoww*/
+    background-color: #a28f00cd;
     color: #8e0303;
 }
 
-.table__caption {
-    text-align: left;
-}
-
-.table__header {
-    background-color: #ffe100cd; /*ozdobniki do naglowkoww*/
-    color: #7c0707;
+.table__cell--header {
+    background-color: #ffe100cd;
     text-shadow: 0px 2px 25px #176d2b;
 }
 
@@ -86,6 +78,7 @@ text-align: center;
     text-shadow: none;
     border-radius: 10px/30px;
     padding: 10px 51px;
+    
 }
 
 .nav__link:hover {
@@ -107,7 +100,7 @@ text-align: center;
 }
 
 .specialFunction__hell {
-    background-color: #d30101c3; /*piekiełko*/
+    background-color: #d30101c3; 
     color: #0a460a;
     font-size: 14px;
     font-family: "Wingdings";
