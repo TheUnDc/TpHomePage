@@ -1,0 +1,48 @@
+/*1. BoxModel*/
+
+.container__body {
+    max-width: 1000px;
+    margin: auto;
+    line-height: 1.8;
+    background-image: url("https://i.postimg.cc/7YXxrX9t/backgroundneon.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.container__body--hell {
+   background-image:url("https://i.postimg.cc/bNzscZxg/hell-background.gif");
+}
+
+.section__boxModel {
+    margin: 10px;
+    padding: 10px;
+}
+
+.section__boxModel--centering {
+    text-align: center;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: 3;
+}
+
+.table__Caption {
+    margin: auto 20px;
+}
+
+.section__miniImage {
+    float: left;
+    border-radius: 20PX;
+    max-width:100px;
+}
+
+.section__image {
+    display: flex;
+    margin: auto;
+}

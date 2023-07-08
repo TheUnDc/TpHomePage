@@ -1,0 +1,126 @@
+/*2. Style*/
+html {
+   box-sizing: border-box; /*alter borderbox dodany by padding i border byly brane pod uwage przy skalowaniu itp*/
+}
+
+*, ::after, ::before {
+    box-sizing: inherit; /*bacground: transparent*/
+}
+
+.section__header {
+    background-color: #ffe100cd; /*ozdobniki do naglowkoww*/
+    color: #7c0707;
+    border-radius: 20px / 90px;
+    text-shadow: 0px 2px 25px #176d2b;
+}
+
+.container__bodyStyle { /*tło wypełniające główną treść*/
+    content: "";
+    background-color: #21224a85; /*ciekawy trick zamiast opacity (dać rgba i po, pisac )*/
+    color: #FFE300;
+    text-shadow: -7px -1px 10px #7c0707;
+    border-radius: 20px / 40px;
+    position: relative;
+}
+
+.content__importantItem { /*ozdobne obramowanie*/
+border: 5px solid #0009FF;
+outline: solid #FF00B1;
+text-align: center;
+}
+
+.comment__boxModel { /*ramka do pisania komentarza*/
+    border: 2px solid #176e2c;
+    color: #ffffff;
+    background-color: rgba(33, 34, 74, 0.795);
+    display: block;
+    margin-left: 20px;
+    min-width: 90%;
+    max-height: 100px;
+    resize:vertical;
+}
+
+.content__importantPhrase {
+    color: #00FF0D;
+}
+
+.table {
+    border-collapse: collapse;
+    margin: auto;
+    width: 90%; 
+}
+
+.table__overflow {
+    overflow-x: auto;
+}
+
+.table__cell {
+    border: 5px solid #7c0707;
+    background-color: #c5ae07cd;
+    color: #7c0707;
+    text-shadow: none;
+    padding: 10px;
+    text-align: center;
+}
+
+.table__cell:hover {
+    background-color: #a28f00cd; /*ozdobniki do naglowkoww*/
+    color: #8e0303;
+}
+
+.table__caption {
+    text-align: left;
+}
+
+.table__header {
+    background-color: #ffe100cd; /*ozdobniki do naglowkoww*/
+    color: #7c0707;
+    text-shadow: 0px 2px 25px #176d2b;
+}
+
+.nav__link {
+    color: #ffffff;
+    background-color: #0008ffa3;
+    font-weight: 700;
+    text-decoration: none;
+    text-shadow: none;
+    border-radius: 10px/30px;
+    padding: 10px 51px;
+}
+
+.nav__link:hover {
+    background-color: #453c3c;
+    color: white;
+ }
+
+.content__link {
+    color: #7c0707;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 20px/40px;
+    padding: 5px;
+}
+
+.content__link:hover {
+    background-color: #453c3c;
+    color: white;
+}
+
+.specialFunction__hell {
+    background-color: #d30101c3; /*piekiełko*/
+    color: #0a460a;
+    font-size: 14px;
+    font-family: "Wingdings";
+}
+
+.specialFunction__blockade {    
+    font-size: 50px;
+    text-align: center;
+}
+
+.specialFunction__magicButton {
+    background-color: #ec7e7e;
+    color: #453c3c;
+    outline: dashed #176d2b;
+    outline-offset: -5px;
+}
