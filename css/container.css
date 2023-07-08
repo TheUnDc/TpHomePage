@@ -31,7 +31,6 @@
     align-items: center;
     flex-wrap: wrap;
     line-height: 3;
-    flex-grow: 1;
 }
 
 .table__caption {
