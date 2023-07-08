@@ -4,7 +4,7 @@
     max-width: 1000px;
     margin: auto;
     line-height: 1.8;
-    background-image: url("https://i.postimg.cc/7YXxrX9t/backgroundneon.jpg");
+    background-image: url("../images/backgroundneon.png");
     background-size: cover;
     background-attachment: fixed;
     object-fit: cover;
@@ -12,7 +12,7 @@
 }
 
 .container__body--hell {
-   background-image:url("https://i.postimg.cc/bNzscZxg/hell-background.gif");
+   background-image:url("../images/hell_background.gif");
 }
 
 .section__boxModel {

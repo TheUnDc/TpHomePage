@@ -55,8 +55,8 @@ hellbuttonElement.addEventListener("click", () => {
     basicStyleElement.classList.add("specialFunction__hell");
     container.classList.add("container__body--hell");
 
-    portrait.src = "//i.postimg.cc/ydz9xG8s/Devil2E.jpg";
-    miniPortrait.src = "https://i.postimg.cc/Fzv1KR29/hell-mason.jpg";
+    portrait.src = "../images/Devil2.jpg";
+    miniPortrait.src = "../images/hell_mason.jpg";
 
     document.body.scrollTop = 0; //INFO: scroll for Safari
     document.documentElement.scrollTop = 0; //INFO: scroll for rest
