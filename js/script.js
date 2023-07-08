@@ -1,4 +1,4 @@
-console.log("Witaj! Musisz być świrem, skoro tu zaglądasz :P");
+console.log("Greetings! You must be crazy to come here :P");
 
 const blockadeButtonElement = document.querySelector(".js-blockadeButton");
 const blockadeSpamElement = document.querySelector(".js-blockadeSpam");
