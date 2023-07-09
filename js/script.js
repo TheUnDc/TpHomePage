@@ -6,7 +6,7 @@
     const blockadeButtonElement = document.querySelector(".js-blockadeButton");
     const blockadeResponse = document.querySelector(".js-blockadeResponse");
     const blockadeEditable = document.getElementById("idBlockadeButton");
-    const naviElement = document.getElementById("navi");
+    
 
     const blockadeSpammer = () => {
         if (blockadeEditable.value === "") {
@@ -14,6 +14,7 @@
 
         } else {
             const blockadeSpamElement = document.querySelector(".js-blockadeSpam");
+            const naviElement = document.getElementById("navi"); //zadeklarowalem  ten sam element tu i w funkcji hell
 
             blockadeButtonElement.innerText = "Zostałeś zablokowany za posiadanie opini niezgodnej z linią mojej filozofii. Wciśnij by się rozgrzeszyć!"
             blockadeResponse.innerText = "Jak śmiesz mieć opinię! Nie ma znaczenia, co o tym myślisz!"
@@ -46,6 +47,7 @@
         const miniPortrait = document.querySelector(".section__miniImage");
         const portrait = document.getElementById("portrait");
         const mainHeader = document.getElementById("mainHeader");
+        const naviElement = document.getElementById("navi"); //zadeklarowalem ten sam element tu i w funkcji blockadespammer
 
         portrait.style.border = "0"
         miniPortrait.style.border = "0"
