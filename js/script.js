@@ -1,4 +1,6 @@
-console.log("Greetings! You must be crazy to come here :P");
+const greetings = () => {
+    console.log("Greetings! You must be crazy to come here :P");
+};
 
 const blockadeButtonElement = document.querySelector(".js-blockadeButton");
 const blockadeSpamElement = document.querySelector(".js-blockadeSpam");
@@ -28,6 +30,11 @@ blockadeButtonElement.addEventListener("click", () => {
         document.documentElement.scrollTop = 0; //INFO: scroll for rest
     }
 });
+
+
+
+
+
 
 const hellbuttonElement = document.querySelector(".js-hellButton");
 const basicStyleElement = document.querySelector(".container__bodyStyle");
