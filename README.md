@@ -1,5 +1,5 @@
 # TheUNDC My homepage
-## [TUDcurrencalculator link](https://theundc.github.io/TUDcurrencyCalculator/)
+## [TpHomePageLink](https://theundc.github.io/TpHomePage/)
 
 ## Welcome my mini blog and buiussnes card in one
 
