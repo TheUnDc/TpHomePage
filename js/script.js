@@ -3,10 +3,16 @@
         console.log("Greetings! You must be crazy to come here :P");
     };
 
-    const blockadeButtonElement = document.querySelector(".js-blockadeButton");
     const responseSpecialFunction = document.querySelector(".js-specialFunctionResponse");
     const blockadeEditable = document.getElementById("idBlockadeButton");
+    const blockadeButtonElement = document.querySelector(".js-blockadeButton");
     const hellbuttonElement = document.querySelector(".js-hellButton");
+
+    const init = () => {
+        doDevGreetings()
+        blockadeButtonElement.addEventListener("click", doBlockadeSpecialFunction);
+        hellbuttonElement.addEventListener("click", doHellSpecialFunction);
+        };
     
 
     const scrollSpecialFunction = () => {
@@ -90,7 +96,5 @@
         naviElement.style.display = "none";
     };
 
-    doDevGreetings()
-    blockadeButtonElement.addEventListener("click", doBlockadeSpecialFunction);
-    hellbuttonElement.addEventListener("click", doHellSpecialFunction);
+    init();
 }
