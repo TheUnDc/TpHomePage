@@ -12,7 +12,7 @@
         doDevGreetings()
         blockadeButtonElement.addEventListener("click", doBlockadeSpecialFunction);
         hellbuttonElement.addEventListener("click", doHellSpecialFunction);
-        };
+    };
     
 
     const scrollSpecialFunction = () => {
