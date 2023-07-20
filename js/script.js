@@ -1,5 +1,5 @@
 {
-    const doDevGreetings = () => {
+    const doLogGreetings = () => {
         console.log("Greetings! You must be crazy to come here :P");
     };
 
@@ -9,27 +9,27 @@
     const hellbuttonElement = document.querySelector(".js-hellButton");
 
     const init = () => {
-        doDevGreetings()
+        doLogGreetings()
         blockadeButtonElement.addEventListener("click", doBlockadeSpecialFunction);
         hellbuttonElement.addEventListener("click", doHellSpecialFunction);
     };
     
 
-    const scrollSpecialFunction = () => {
+    const scrollToTheTop = () => {
         document.body.scrollTop = 0; // INFO: scroll for Safari
         document.documentElement.scrollTop = 0; //INFO: scroll for rest
     };
 
-    const reloadSpecialFunction = () => {
-        scrollSpecialFunction();
+    const reloadAndScroll = () => {
+        scrollToTheTop();
         location.reload(true);
     };
 
-    const breakSpecialFunction = () => {
+    const replaceListenerToRefresh = () => {
         blockadeButtonElement.removeEventListener("click", doBlockadeSpecialFunction);
         hellbuttonElement.removeEventListener("click", doHellSpecialFunction);
-        blockadeButtonElement.addEventListener("click", reloadSpecialFunction);
-        hellbuttonElement.addEventListener("click", reloadSpecialFunction);
+        blockadeButtonElement.addEventListener("click", reloadAndScroll);
+        hellbuttonElement.addEventListener("click", reloadAndScroll);
     };
 
     const doBlockadeSpecialFunction = () => {
@@ -40,8 +40,8 @@
         } else {
             modifyBlockadeContents();
             spamBlockadeText();
-            scrollSpecialFunction();
-            breakSpecialFunction();
+            scrollToTheTop();
+            replaceListenerToRefresh();
         }
     };
 
@@ -68,8 +68,8 @@
 
         modifyHellContents();
         modifyHellStyles();
-        scrollSpecialFunction();
-        breakSpecialFunction();
+        scrollToTheTop();
+        replaceListenerToRefresh();
     }
 
     const modifyHellStyles = () => {
