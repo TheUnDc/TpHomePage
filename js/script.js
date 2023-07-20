@@ -49,7 +49,7 @@
         const blockadeSpamElement = document.querySelector(".js-blockadeSpam");
         const textElement = "Zablokowano";
         const multiplierX = textElement.repeat(3);
-        const multiplierY = `${multiplierX}<br>`;
+        const multiplierY = `${multiplierX}\n`;
         const IImultiplier = multiplierY.repeat(30);
         blockadeSpamElement.innerHTML = IImultiplier;
     };
